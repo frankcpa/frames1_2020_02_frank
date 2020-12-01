@@ -9,7 +9,7 @@
         <h:outputScript name="jquery/jquery-3.3.1.slim.min.js"/>
         <h:outputScript name="jquery/jquery.min.js"/>
         <h:outputScript name="bootstrap-4.1/js/popper.min.js" />
-        <h:outputScript name="bootstrap-4.1/js/bootstrap.min.js"/>        
+        <h:outputScript name="bootstrap-4.1/js/bootstrap.min.js"/>   
     </h:head>
     <h:body>
         <ui:insert name="cabecalhoMenu">
@@ -30,6 +30,16 @@
                             <h:link class="dropdown-item" value="Cadastrar Campus" outcome="/view/campus/inserirCampus.xhtml" />
                             <h:link class="dropdown-item" value="Buscar Campus" outcome="/view/campus/buscarCampus.xhtml" />
                         </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Servidor</a>
+                        <div class="dropdown-menu">
+                            <h:link class="dropdown-item" value="Cadastrar Servidor" outcome="/view/servidor/inserirServidor.xhtml" />
+                            <h:link class="dropdown-item" value="Buscar Servidor" outcome="/view/servidor/buscarServidor.xhtml" />
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <h:link class="nav-link active" value="Campus X Servidor" outcome="/view/campusxservidor/criar.xhtml" />
                     </li>
                     <li class="nav-item">
                         <a class="nav-link disabled" id="nomeUsuario" href="#"></a>
